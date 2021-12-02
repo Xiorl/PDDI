@@ -1,0 +1,247 @@
+:root {
+    --FONT_MOVIL_SIZE: 15px;
+    --FONT_TABLET_SIZE: 20px;
+    --FONT_PC_SIZE: 20px;
+    --TITLE_MOVIL_SIZE: 30px;
+    --TITLE_TABLET_SIZE: 40px;
+    --TITLE_PC_SIZE: 45px;
+    --PADDING_MOVIL: 10px;
+    --PADDING_TABLET: 20px;
+    --PADDING_PC: 30px;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.brand {
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 320px){
+
+    .caja {
+        font-size: var(--FONT_MOVIL_SIZE);
+        padding: var(--PADDING_MOVIL);
+        width: 80%;
+    }
+    .web-title {
+        font-size: var(--TITLE_MOVIL_SIZE);
+    }
+    .brand img, .img {
+        width: 100%;
+    }
+    .mapa {
+        height: 400px;
+    }
+    header nav {
+        max-width: 204px;
+        font-size: 15px;
+    }
+  
+}
+@media screen and (min-width: 768px){
+    
+    .caja {
+        font-size: var(--FONT_TABLET_SIZE);
+        padding:var(--PADDING_TABLET);
+        width: 80%;
+    }
+    .web-title {
+        font-size: var(--TITLE_TABLET_SIZE);
+    }
+    .brand img, .img {
+        width: 100%;
+    }
+    .mapa {
+        height: 500px;
+    }
+    header nav {
+        max-width: 474px;
+        font-size: 25px;
+    }
+
+}
+@media screen and (min-width: 1024px) {
+
+    .caja {
+        font-size: var(--FONT_PC_SIZE);
+        padding:var(--PADDING_PC);
+        width: 70%;
+    }
+    .web-title {
+        font-size: var(--TITLE_PC_SIZE);
+    }
+    .brand img {
+        width: 30%;
+    }
+    .img {
+        width: 50%;
+    }
+    .mapa {
+        height: 600px;
+    }
+    header nav {
+        max-width: 474px;
+        font-size: 25px;
+    }
+
+}
+
+
+
+/*----------- CAJA ----------- */
+.web-info {
+    background-color: #f3f3f3;
+    
+}
+.web-title
+{
+    color: #fbb593;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.caja { 
+    font-family: 'Balsamiq Sans', cursive;
+    color: #000000; 
+    text-align: center; 
+    margin-top: 20px;
+    background: #ffffff;
+    overflow: hidden; 
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 2px solid #727272;
+}
+.caja .titulos {
+    color:#fa9766;
+}
+.caja-container {
+    display: flex;
+    justify-content: center;
+}
+.mapa {
+    width: 95%;
+}
+
+#vid {
+    width: 90%;
+}
+
+.boton {
+    background-color: rgb(213, 255, 184);
+    border: 2px solid rgb(118, 209, 126);
+    border-radius: 6px;
+    color:#000000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#pause {
+    background-color: rgb(206, 255, 252);
+    border: 2px solid rgb(176, 207, 206);
+}
+#mute {
+    background-color: rgb(255, 124, 124);
+    border: 2px solid rgb(223, 54, 54);
+}
+
+#play:hover, #pause:hover, #mute:hover{
+    background-color: rgb(161, 161, 161);
+    border: 2px solid rgb(126, 126, 126);
+    cursor: pointer;
+}
+
+.bar-menu {
+    display: none;
+   
+}
+
+header nav {
+    background: #fbb593;
+    z-index: 1000;
+   
+    width: 95%;
+    margin: 20px auto;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    position: relative;
+}
+header nav ul li:hover {
+    background: #b9704b;
+}
+
+header nav ul li a {
+    color: honeydew;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+}
+
+header nav ul li a span {
+    margin-right: 10px;
+}
+
+header nav ul li:hover .sub-elemento {
+    display: block;
+}
+
+header nav ul li .sub-elemento {
+    display: none;
+    background: #db865b;
+    position: absolute;
+    width: 200%;
+    z-index: 1000;
+    font-size: 90%;
+
+}
+
+header nav ul li .sub-elemento li {
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid rgb(255,255,255,.5);
+
+}
+
+header nav ul li .sub-elemento li a {
+    display: block;
+
+}
+
+header nav ul li .sub-elemento li a span{
+    float: right;
+    position: relative;
+    top: 3px;
+    margin-right: 0;
+    margin-left: 10px;
+
+}
+
+header nav ul li .caret {
+    position: relative;
+    top: 3px;
+    margin-top: 10px;
+    margin-right: 0px;
+
+}
